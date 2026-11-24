@@ -1,0 +1,27 @@
+# 运行时、临时文件和敏感数据
+.ssh-ipxe-key
+.ssh-temp/
+.codex-finalizer/
+.pptx-build/
+.pptx-template-inspect/
+.pptx-template-layouts/
+work/
+*.iso
+*.img
+*.qcow2
+*.key
+*.pem
+*.pub
+
+# 生成的发布包由 tools/build_ipxe_packages.py 重新生成
+packages/*.zip
+
+# Python/Node 临时文件
+__pycache__/
+*.pyc
+node_modules/
+.tmp-*/
+
+# 本地编辑器
+.vscode/
+.idea/

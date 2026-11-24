@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "http_port": 8080,
+  "ipxe_commit": "7cd92e01d6514b2c8091999f9bce8aef22a1d586",
+  "networks": [
+    {
+      "interface": "enp90s0f0",
+      "enabled": true,
+      "configure_address": true,
+      "ipv4": "172.22.10.1/24",
+      "pool4": ["172.22.10.100", "172.22.10.220"],
+      "ipv6": "fd42:19:10::1/64",
+      "pool6": ["fd42:19:10::100", "fd42:19:10::ffff"]
+    },
+    {
+      "interface": "enp90s0f1",
+      "enabled": true,
+      "configure_address": true,
+      "ipv4": "172.22.11.1/24",
+      "pool4": ["172.22.11.100", "172.22.11.220"],
+      "ipv6": "fd42:19:11::1/64",
+      "pool6": ["fd42:19:11::100", "fd42:19:11::ffff"]
+    },
+    {
+      "interface": "enx00e04c580a4c",
+      "enabled": false,
+      "note": "Management NIC; existing DHCP and IPv6 RA. Never serve provisioning DHCP here."
+    }
+  ]
+}
